@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - SITY PROVISIONS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #DD1919;
+            color: #ea9a10;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        body {
+            background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(1.jpg);
+            background-position: center;
+            background-size: cover;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            width: 300px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+        }
+
+        .form h2 {
+            text-align: center;
+            color: #ff7200;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .form input,
+        .form select {
+            width: 100%;
+            height: 35px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #ff7200;
+            color: #fff;
+            font-size: 15px;
+            margin-bottom: 15px;
+            padding: 5px;
+            outline: none;
+        }
+
+        .form select {
+            height: 40px;
+            appearance: none; /* Remove default arrow */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M7 10l5 5 5-5z" /></svg>'); /* Add custom arrow */
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 18px;
+        }
+
+        .form button {
+            width: 100%;
+            height: 40px;
+            background: #ff7200;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.4s ease;
+        }
+
+        .form button:hover {
+            background-color: #ff9500;
+        }
+
+        .form .link {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .form .link a {
+            text-decoration: none;
+            color: #ff7200;
+        }
+
+        .liw {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            margin: 0 10px;
+            transition: color 0.4s ease;
+        }
+
+        .icons a:hover {
+            color: #ff7200;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>SITY PROVISIONS</h1>
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="categoriespage.html">Categories</a>
+            <a href="special offfers.html">Special Offers</a>
+            <a href="Account.html">Account</a>
+        </nav>
+    </header>
+    <form class="form" onsubmit="return validateForm()">
+        <h2>Sign Up Here</h2>
+        <input type="text" name="fullname" required="required" placeholder="Surname">
+        <input type="text" name="surname" required="required" placeholder="Last name">
+        <select name="gender" required="required">
+            <option value="" disabled selected>Choose Gender</option>
+            <option value="male" style="color: black;">Male</option>
+            <option value="female" style="color: black;">Female</option>
+        </select>
+        <input type="email" name="email" required="required" placeholder="Enter Email Here">
+        <input type="password" name="password" required="required" placeholder="Enter Password Here">
+            <button onclick="window.location.href='Login.html';">Sign Up</button>
+        <p class="link">Already have an account?<br><a href="login.html">Login here</a></p>
+        <p class="liw">Sign up with</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/YourPageName"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/YourUserName"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://twitter.com/YourUserName"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://plus.google.com/YourProfileID"><ion-icon name="logo-google"></ion-icon></a>
+            <a href="https://skype.com/YourUserPage?chat"><ion-icon name="logo-skype"></ion-icon></a>
+        </div>
+    </form>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

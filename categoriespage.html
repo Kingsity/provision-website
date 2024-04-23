@@ -1,0 +1,99 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - SITY PROVISIONS</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #DD1919;
+            color: #ea9a10;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .category {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .category img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SITY PROVISIONS</h1>
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="categoriespage.html">Categories</a>
+            <a href="special offfers.html">Special Offers</a>
+            <a href="Account.html">Account</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Categories</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="groceries pic.jpg" alt="Groceries">
+                <h3>Groceries</h3>
+                <p>Shop for all your grocery needs</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="category">
+                <img src="personal care pic.jpg" alt="Personal Care">
+                <h3>Personal Care</h3>
+                <p>Explore our selection of personal care products</p>
+                <a href="#">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Contact Us: info@sityprovisions.com | Phone: 020-759-6536 | Address: Sunyani, Fiapre</p>
+            <nav>
+                <a href="About Us.html">About Us</a>
+            </nav>
+            <p>Follow Us: <div class="icons">
+                <a href="https://www.facebook.com/YourPageName"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/YourUserName"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://twitter.com/YourUserName"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://plus.google.com/YourProfileID"><ion-icon name="logo-google"></ion-icon></a>
+                <a href="https://skype.com/YourUserPage?chat"><ion-icon name="logo-skype"></ion-icon></a>
+            </div></p>
+        </div>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </footer>
+</body>
+</html>

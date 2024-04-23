@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SITY PROVISIONS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(1.jpg);
+            background-position: center;
+            background-size: cover;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header {
+            background-color: #DD1919;
+            color: #ea9a10;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .form {
+            width: 250px;
+            height: auto;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.8) 50%);
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .form h2 {
+            width: 220px;
+            font-family: sans-serif;
+            text-align: center;
+            color: #ff7200;
+            font-size: 22px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+
+        .form input {
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid #ff7200;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+            outline: none;
+        }
+
+        .form input::placeholder {
+            color: #fff;
+            font-family: Arial;
+        }
+
+        
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+        .form .link {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .form .link a {
+            text-decoration: none;
+            color: #ff7200;
+        }
+
+        .liw {
+            padding-top: 15px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .icons ion-icon {
+            color: #fff;
+            font-size: 30px;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition: 0.3s ease;
+        }
+
+        .icons ion-icon:hover {
+            color: #ff7200;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SITY PROVISIONS</h1>
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="categoriespage.html">Categories</a>
+            <a href="special offfers.html">Special Offers</a>
+            <a href="Account.html">Account</a>
+        </nav>
+    </header>
+    <form class="form" onsubmit="return validateForm()">
+        <h2>Login Here</h2>
+        <input type="email" name="email" required="required" placeholder="Enter Email Here">
+        <input type="password" name="password" required="required" placeholder="Enter Password Here">
+        <button type="submit" class="btnn"><a href="Login.html"> Login </button>
+        <p class="link"><a href ="Sign Up.html"> Don't have an account<br>
+    <a href="Sign Up.html"> Sign up </a> here</a></p>
+    <p class="liw">Log in with</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/YourPageName"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.instagram.com/YourUserName"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://twitter.com/YourUserName"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://plus.google.com/YourProfileID"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="https://skype.com/YourUserPage?chat"><ion-icon name="logo-skype"></ion-icon></a>
+    </div>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
